@@ -1,0 +1,38 @@
+spraybottle -> aerosolbottle
+cabinet -> cupboard
+countertop -> worktop
+sinkbasin -> sinkbowl
+toilet -> lavatory
+toiletpaperhanger -> toiletpaperholder
+towelholder -> towelrack
+
+microwave -> oven 
+shelf -> rack
+drawer -> deskdrawer 
+stoveburner -> hob
+diningtable -> table
+garbagecan -> trashbin
+
+fridge -> refrigerator
+peppershaker -> pepperpot
+room -> livingroom
+bread -> breadloaf 
+pan -> fryingpan
+pot -> saucepan
+book -> notebook
+ 
+creditcard -> amexcard 
+mirror -> lookingglass
+dresser -> chestofdrawers
+sofa -> couch
+cellphone -> mobilephone
+coffeemachine -> coffeemaker
+knife -> kitchenknife
+spatula -> turner
+soapbottle -> liquidsoapdispenser
+saltshaker -> saltpot
+statue -> sculpture
+vase -> flowerpot
+dishsponge -> spongewipe
+desklamp -> tablelamp
+sidetable -> nightstand

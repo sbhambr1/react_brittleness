@@ -1,0 +1,122 @@
+PUT ----
+
+close cabinet 2.\nNothing Happens.\n> think: Nothing happens because cabinet 2 is already closed.\nOK.\n>
+
+put spraybottle 2 in/on toilet.\nNothing Happens.\n> think: Nothing happens because I do not have spraybottle 2.\nOK.\n>
+
+
+close cabinet 2.\nNothing Happens.\n> think: Nothing happens because you are not at cabinet 2.\nOK.\n>
+
+put apple 3 in/on sidetable.\nNothing Happens.\n> think: Nothing happens because I do not have apple 3.\nOK.\n>
+
+
+close cabinet 2.\nNothing Happens.\n> think: Nothing happens because you are not at cabinet 2.\nOK.\n>
+
+put soapbottle 2 in/on garbagecan.\nNothing Happens.\n> think: Nothing happens because I do not have soapbottle 2\nOK.\n>
+
+
+CLEAN ---
+
+
+close cabinet 2.\nNothing Happens.\n> think: Nothing happens because you are not at cabinet 2.\nOK.\n>
+
+clean lettuce 1.\nNothing Happens.\n> think: Nothing happens because I do not have lettuce 1.\nOK.\n>
+
+
+
+close cabinet 2.\nNothing Happens.\n> think: Nothing happens because you are not at cabinet 2.\nOK.\n>
+
+clean apple 1.\nNothing Happens.\n> think: Nothing happens because I do not have apple 1.\nOK.\n>
+
+
+
+
+
+clean soapbar 1.\nNothing Happens.\n> think: Nothing happens because I do not have soapbar 1.\nOK.\n>
+
+
+HEAT --- 
+
+open countertop 2.\nNothing Happens.\n> think: Nothing happens because open action on countertop is invalid.\nOK.\n>
+
+heat egg 2 with microwave 3.\nNothing Happens.\n> think: Nothing happens because I do not have egg 2.\nOK.\n>
+
+
+
+
+open diningtable 1.\nNothing Happens.\n> think: Nothing happens because open action on diningtable is invalid.\nOK.\n>
+
+heat apple 1 with microwave 3.\nNothing Happens.\n> think: Nothing happens because I do not have apple 1.\nOK.\n>
+
+
+
+open bread 1.\nNothing Happens.\n> think: Nothing happens because open action on bread is invalid.\nOK.\n>
+
+heat bread 1 with microwave 3.\nNothing Happens.\n> think: Nothing happens because I do not have bread 1.\nOK.\n>
+
+
+COOL --- 
+
+take pan 1 from stove burner 3.\nNothing Happens.\n> think: Nothing happens because I am not at stoveburner 3.\nOK.\n>
+
+cool pan 1 using fridge 1.\nNothing Happens.\n> think: Nothing happens because I do not have pan 1.\nOK.\n>
+
+
+
+
+take mug 1 from stove burner 3.\nNothing Happens.\n> think: Nothing happens because I am not at stoveburner 3.\nOK.\n>
+
+cool mug 1 using fridge 1.\nNothing Happens.\n> think: Nothing happens because I do not have mug 1.\nOK.\n>
+
+
+
+
+
+take potato 1 from shelf 3.\nNothing Happens.\n> think: Nothing happens because I am not at shelf 3.\nOK.\n>
+
+cool potato 1 using fridge 1.\nNothing Happens.\n> think: Nothing happens because I do not have pan 1.\nOK.\n>
+
+
+
+
+
+PUTTWO --- 
+
+
+take creditcard 2 from shelf 3.\nNothing Happens.\n> think: Nothing happens because I am not at shelf 3.\nOK.\n>
+
+put creditcard 1 in cabinet 1.\nNothing Happens.\n> think: Nothing happens because I do not have creditcard 1.\nOK.\n>
+
+
+take cellphone 2 from shelf 3.\nNothing Happens.\n> think: Nothing happens because I am not at shelf 3.\nOK.\n>
+
+put cellphone 1 in cabinet 1.\nNothing Happens.\n> think: Nothing happens because I do not have cellphone1 1.\nOK.\n>
+
+
+
+take saltshaker 1 from shelf 3.\nNothing Happens.\n> think: Nothing happens because I am not at shelf 3.\nOK.\n>
+
+put saltshaker 1 in cabinet 1.\nNothing Happens.\n> think: Nothing happens because I do not have saltshaker 1.\nOK.\n>
+
+
+
+
+EXAMINE ---
+
+
+
+take bowl 1 from shelf 3.\nNothing Happens.\n> think: Nothing happens because I am not at shelf 3.\nOK.\n>
+
+turn on desklamp 1.\nNothing Happens.\n> think: Nothing happens because there is no desklamp at my location.\nOK.\n>
+
+
+
+take pen 1 from shelf 3.\nNothing Happens.\n> think: Nothing happens because I am not at shelf 3.\nOK.\n>
+
+turn on desklamp 1.\nNothing Happens.\n> think: Nothing happens because there is no desklamp at my location.\nOK.\n>
+
+
+
+take statue 1 from shelf 3.\nNothing Happens.\n> think: Nothing happens because I am not at shelf 3.\nOK.\n>
+
+turn on desklamp 1.\nNothing Happens.\n> think: Nothing happens because there is no desklamp at my location.\nOK.\n>

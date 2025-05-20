@@ -1,40 +1,59 @@
-# Running Webshop 
-
-Run `patchfix.sh` for each container. It updates the `/webshop/web_agent_site/utils.py` to use the larger dataset and downloads it using `webvenv` virtual environment present in the container. 
+# Code for the TMLR paper: "Do Think Tags Really Help LLMs Plan? A Critical Evaluation of ReAct-Style Prompting"
 
 
-# ReAct Prompting
+## Use VSCode DevContainers
 
-GPT-3 prompting code for ICLR 2023 paper [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629).
+Setup : 
 
-To use ReAct for more tasks, consider trying [LangChain's zero-shot ReAct Agent](https://python.langchain.com/docs/modules/agents/agent_types/react.html).
+1. Make sure VSCode has devcontainer extension installed. 
+2. You have docker that is already setup (you can run `docker ps`, `docker images`) easily.
 
-## Setup
-You need to first have an OpenAI API key and store it in the environment variable ``OPENAI_API_KEY`` (see [here](https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety)).
-
-Package requirement: ``openai``, and install ``alfworld`` following instructions [here](https://github.com/alfworld/alfworld).
-
-## Experiments
-Run ``{hotpotqa,fever,alfworld,webshop}.ipynb``. As HotpotQA and FEVER have large validation sets, we only run 500 random examples (see notebooks). We find PaLM and GPT-3 are better at different tasks.
+Running : 
+1. Clone the repository : `git clone https://github.com/sbhambr1/react_brittleness`
+2. Run the devcontainer : VSCode should give a popup to run the code within a devcontainer. If not, then do Cmd + Shift + P to open VSCode command pallete and search for `Rebuild Container` which should start the devcontainer. 
+3. Specify `OPENAI_API_KEY`, `ANTHROPIC_API_KEY` as environment variable. 
 
 
-|                    | HotpotQA (500 random dev, EM) | FEVER (500 random dev, EM) | AlfWorld (success rate) | WebShop  (success rate) |
-|--------------------|-------------------------------|----------------------------|-------------------------|-------------------------|
-| PaLM-540B (paper)  | 29.4                          | 62.2                       | 70.9                    | 40                      |
-| GPT-3 (davinci-002) | 30.4                          | 54                         | 78.4                    | 35.8                    |
+**Running Webshop**
+1. In the devcontainer use docker image : `famishedrover/taxonomy_llm:webshop` 
+2. Run the webshop by running.
+```cmd 
+source /webvenv/bin/activate 
+cd /webshop/
+./run_dev.sh 
+```
+3. Open the webpage. VSCode should prompt you, otherwise Flask will also log a message that the website is accessible on link like : `172.0.0.6:3000` (Use the link mentioned in the message!)
 
-## Citation
+4. Run OpenAI code using native python (not webvenv)
 
-```bibtex
-@inproceedings{yao2023react,
-  title = {{ReAct}: Synergizing Reasoning and Acting in Language Models},
-  author = {Yao, Shunyu and Zhao, Jeffrey and Yu, Dian and Du, Nan and Shafran, Izhak and Narasimhan, Karthik and Cao, Yuan},
-  booktitle = {International Conference on Learning Representations (ICLR) },
-  year = {2023},
-  html = {https://arxiv.org/abs/2210.03629},
-}
+
+## Installation for Local setup
+
+```bash
+pip install openai anthropic ratelimit alfworld
 ```
 
 
+```bash
+git clone https://github.com/sbhambr1/react_brittleness
+conda create -n react_test python=3.9
+conda activate react_test
+pip install -r requirements.txt
+```
 
-# react_brittleness
+## Directory Setup
+
+```bash
+mkdir data
+```
+
+## Run ReAct Baseline
+
+```bash
+python runners/react_alfworld.py
+```
+
+
+## Running Webshop 
+
+Run `patchfix.sh` for each container. It updates the `/webshop/web_agent_site/utils.py` to use the larger dataset and downloads it using `webvenv` virtual environment present in the container. 

@@ -1,0 +1,6 @@
+outputs/
+perturb_outputs/
+truncated_perturb_outputs/
+trunc_perturb_outputs/
+test_webshopoutput/
+aws/

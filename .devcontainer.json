@@ -1,0 +1,40 @@
+{
+    "name": "LLMTaxonomy",
+    // "image": "famishedrover/taxonomy-llm:latest",
+    "image": "famishedrover/taxonomy-llm:webshop_small",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "eamodio.gitlens",
+                "esbenp.prettier-vscode",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "ms-azuretools.vscode-docker",
+                "ms-python.mypy-type-checker",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.jupyter-keymap",
+                "ms-toolsai.jupyter-renderers",
+                "ms-toolsai.vscode-jupyter-cell-tags",
+                "ms-toolsai.vscode-jupyter-slideshow",
+                "zerefdev.todo-highlighter",
+            ],
+            "settings": {
+            "python.pythonPath": "/usr/local/bin/python"
+            }
+        }
+    },
+    "forwardPorts": [5000, 8080],
+    // Uncomment the following if you need GPU.
+    // "runArgs": [
+    //     "--gpus", "all",
+    //     "--env-file", "${localWorkspaceFolder}/.devcontainer/.env"
+    // ],
+    "mounts": [
+        // "source=/data/mudit/clip-pbrl,target=/data,type=bind,consistency=cached", 
+        // data
+        "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached" // ssh key for git
+        // "type=bind,source=${localEnv:HOME}/.ssh,target=/root/.ssh,readonly",
+    ]
+  }
